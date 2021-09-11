@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root
+{
+    --main-text: #f50057;
+    --text: #777;
+}
+
+html{
+    
+    scroll-behavior: smooth;
+}
+
+header
+{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    z-index: 99;
+    background-color: #fff;
+}
+
+header .logo
+{
+    font-size: 2em;
+    color: var(--text);
+    font-weight: 400;
+}
+
+header .navbar
+{
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a
+{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--text);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar a::before
+{
+    position: absolute;
+    content: '';
+    top: 22px;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-text);
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar a:hover:before
+{
+    width: 100%;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+
+section
+{
+    position: relative;
+    padding: 80px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.home
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    
+}
+
+
+.home .content h5
+{
+    font-size: 1.2rem;
+}
+
+.home .content h1
+{
+    font-size: 4rem;
+}
+
+.home .content h1 span
+{
+    color: var(--main-text);
+    font-weight: 300;
+}
+
+
+
+.home .content h2
+{
+    font-size: 2.5rem;
+}
+
+.home .content h2 span
+{
+    color: var(--main-text);
+}
+
+.home .home-img img
+{
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home .content .home-btn
+{
+    padding: 5px 8px;
+    background-color: var(--main-text);
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    position: relative
+    
+}
+
+
+/* ========================ABOUT CSS==================================== */
+.about .about-row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.about .about-heading
+{
+    font-size: 3rem;
+    color: var(--text);
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.about .about-img img
+{
+    width: 40vw;
+}
+
+.about .about-content h2
+{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.about .about-content h2 span
+{
+    color: var(--main-text);
+}
+
+
+/* ===========================END ABOUT CSS============== */
+
+
+
+
+
+/* ============SERVICE CSS=============================== */
+
+.service
+{
+    position: relative;
+    padding: 80px;
+    margin-top: 30px;
+}
+
+.service .service-heading
+{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--text);
+}
+
+.service-conatiner
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.service-box
+{
+    padding: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.service-box img
+{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.service-box h4
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.service-box p
+{
+    margin-top: 20px;
+}
+
+.service-box .service-btn
+{
+    background-color: var(--main-text);
+    padding: 5px 10px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+.contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+
+.contact .contact-details
+{
+    width: 50vw;
+}
+
+
+.contact .contact-details h4
+{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.contact .contact-details h4 span
+{
+    color: var(--main-text);
+}
+
+
+
+.form
+{
+    width: 40vw;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+}
+
+.form-heading
+{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.form h2
+{
+    text-align: center;
+    font-weight: 200;
+}
+
+.form form
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+form input,textarea
+{
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+textarea
+{
+    resize: none;
+    white-space: wrap;
+    overflow-x: hidden;
+}
+
+button
+{
+    max-width: 100px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--main-text);
+    color: #fff;
+    padding:8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* =================END SERVICE CSS============================= */
+
+
+/* ========================FOOTER==================== */
+
+footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #ccc;
+}
+/* =================RESPONSIVE SERVICE CARD========== */
+
+@media(max-width:1200px)
+{
+    .service-conatiner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media(max-width:768px)
+{
+    .service-conatiner{
+        grid-template-columns:1fr;
+    }
+}
+/* =================END RESPONSIVE SERVICE CARD========== */
+
+
+
+
+
+
+
+
+
